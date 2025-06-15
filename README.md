@@ -1,2 +1,2 @@
 # tosbaga.com
-Bu bir bitirme projesidir.
+Bu bir bitirme projesidir. Bu projeyi çalıştırmak için XAMPP programının bilgisayarınıza kurulu olması gerekmektedir. XAMPP kurulu olan bilgisayarınızda XAMPP klasöründe ki htdocs klasörüne WEB_SITE dosyasını yüklemeniz gerekir. Ardından XAMPP programı çalıştırılır. Apache ve MySql servisleri aktif hale getirilir. Tarayıcıya "localhost/WEB_SITE/index1.html" yazılarak uygulamanın ana sayfasına gidilir. "localhost/WEB_SITE/admin.php" yazılarak gelen mesajlar kısmı görüntülenir.
