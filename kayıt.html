@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="styles/merged_styles.css">
+</head>
+<body>
+	<header class="header">
+        <a href="index1.html" class="logo">
+            <img src="images/logo.jpg" alt="logo" />
+        </a>
+        <nav class="navbar">
+           <a href="index1.html" class="active">Anasayfa</a>
+           <a href="mekanik.html">Mekanik</a>
+           <a href="sanzıman.html">Şanzıman</a>
+           <a href="fren.html">Fren</a>
+           <a href="elektrik.html">Elektrik</a>
+           <a href="lastik.html">Lastik</a>
+           <a href="yedekparca.html">Yedek Parça</a>
+           <a href="cekici.html">Çekici</a>
+           <a href="hakkımızda.html">Hakkımızda</a>
+           <a href="iletisim.html">İletişim</a>
+        </nav>
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="cart-btn">
+                <i class="fa-solid fa-phone"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        
+        <div class="search-form">
+            <input type="text" 
+            class="search-input" 
+            id="search-box" 
+            placeholder="search">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="cart-items-container ">
+            <div class="cart-item">
+               <i class="fas fa-phone"></i>
+               <div class="content">
+                <h3>Müşteri Destek Hattımıza Ulaşabilirsiniz
+                    444 0 375
+                </h3>
+               </div>
+            </div>
+            <a href="#" class="btn">Hemen Ara</a>
+        </div>
+        </div>
+        <div class="search-form">
+            <input type="text" 
+        class="search-input" id="search-box" placeholder="arayın">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+    <div class="section">
+		<div class="container">
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+                                            <h1>Kayıt Ol</h1>
+                                            <form action="uye_kaydet.php" method="post">
+											<div class="form-group">
+                                                <input type="email" name="logemail" 
+                                                class="form-style" 
+                                                placeholder="E-Mailinizi Giriniz" 
+                                                id="logemail" 
+                                                autocomplete="none">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+                                                <input type="password" name="logpass" 
+                                                class="form-style" 
+                                                placeholder="Şifrenizi Giriniz" 
+                                                id="logpass" autocomplete="none">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<button type="submit" class="btn mt-4">Kayıt Ol</a>
+                            				</form>
+				      					</div>
+			      					</div>
+			      				</div>
+								
+			      		</div>
+			      	</div>
+		</div>
+</div>
+</body>
+</html>
