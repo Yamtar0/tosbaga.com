@@ -2,7 +2,7 @@ const searchForm= document.querySelector(".search-form");
 const cartItem= document.querySelector(".cart-items-container");
 const navbar = document.querySelector(".navbar");
 
-//! buttons
+
 
 const searchBtn= document.querySelector("#search-btn");
 const cartBtn= document.querySelector("#cart-btn");
