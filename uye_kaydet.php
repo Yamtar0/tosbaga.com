@@ -18,7 +18,7 @@ $stmt = $kayit->prepare("INSERT INTO kayıt_ol (e_posta, sifre) VALUES (?, ?)");
 $stmt->bind_param("ss", $eposta, $sifre_hash);
 
   if ($stmt->execute()) {
-        // Başarılıysa yönlendir
+        
         
         header("Location: index1.html");
         exit;
