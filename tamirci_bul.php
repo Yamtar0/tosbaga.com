@@ -2,13 +2,13 @@
 $sehir = trim($_GET['sehir']);
 $semt = trim($_GET['semt']);
 
-// Veritabanı bağlantısı
+
 $baglanti = new mysqli("localhost", "root", "", "tamirciler");
 if ($baglanti->connect_error) {
     die("Bağlantı hatası: " . $baglanti->connect_error);
 }
 
-// Hazırlanan sorgu
+
 if (!empty($semt)) {
     $stmt = $baglanti->prepare("SELECT * FROM oto_tamircileri WHERE sehir = ? AND semt = ?");
     $stmt->bind_param("ss", $sehir, $semt);
