@@ -1,4 +1,4 @@
-/* --- style.css içeriği --- */
+
 @import url('<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">');
 :root {
     --main-color: #03022c;
@@ -18,7 +18,7 @@
     transition: 0.2s ease;
 }
 
-/*! base html codes */
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -70,7 +70,7 @@ section{
     height: 15rem;
 }
 
-/*! header start */
+
 a {
     color: var(--black-color);
     text-decoration: none;
@@ -616,7 +616,7 @@ a {
 
 
 
-/* --- deneme.css içeriği --- */
+
 
 .section{
     position: relative;
