@@ -1,7 +1,7 @@
 <?php
 var_dump($_POST);
 ob_start();
-include("baglanti.php"); // Bağlantıyı al
+include("baglanti.php"); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // POST verilerini al
@@ -9,13 +9,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mesaj = $_POST["mesaj"] ?? '';
     $telefon = $_POST["telefon"] ?? '';
 
-    // Boş alan kontrolü (opsiyonel ama faydalı)
+    
     if (empty($ad_soyad) || empty($mesaj) || empty($telefon)) {
         echo "Lütfen tüm alanları doldurunuz.";
         exit;
     }
 
-    // Veritabanına ekleme
+   
     $sql = "INSERT INTO iletisim (ad_soyad, mesaj, telefon) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sss", $ad_soyad, $mesaj, $telefon);
 
     if ($stmt->execute()) {
-        // Başarılıysa yönlendir
+        
         
         header("Location: index1.html");
         exit;
